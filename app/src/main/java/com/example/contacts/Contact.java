@@ -3,11 +3,21 @@ package com.example.contacts;
 public class Contact {
 
     private String name, lastName, phone;
+    private  int photo;
 
-    public Contact(String name, String lastName, String phone) {
+    public Contact(String name, String lastName, String phone, int photo) {
         this.name = name;
         this.lastName = lastName;
         this.phone = phone;
+        this.photo = photo;
+    }
+
+    public int getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(int photo) {
+        this.photo = photo;
     }
 
     public String getName() {
